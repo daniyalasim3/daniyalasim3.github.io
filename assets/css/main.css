@@ -2161,10 +2161,10 @@ input, select, textarea {
 /* Image */
 
 	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+}
 
 		.image img {
 			display: block;
@@ -2217,6 +2217,29 @@ input, select, textarea {
 				}
 
 			}
+
+/* Align image + content vertically inside each spotlight row */
+.spotlights > section,
+.spotlights > article,
+section.spotlight {
+  display: flex;
+  align-items: center;
+}
+
+/* Remove baseline gap under image */
+.spotlights .image img {
+  display: block;
+}
+
+a.image {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
+
+a.image:hover {
+  border-bottom: none !important;
+  text-decoration: none !important;
+}
 
 /* List */
 
