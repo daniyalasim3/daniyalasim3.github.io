@@ -3975,3 +3975,14 @@ a.image:hover {
 			opacity: 1;
 			visibility: visible;
 		}
+
+	.spotlights > section > .image {
+    overflow: visible !important;
+    height: auto !important;
+}
+
+.spotlights > section > .image img {
+    width: 100%;
+    height: auto !important;
+    object-fit: contain !important;
+}
